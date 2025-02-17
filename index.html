@@ -1,10 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-	
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Phone Numbers List</title>
+		<link rel="icon" type="image/x-icon" href="https://pngimg.com/d/phone_PNG48987.png" />
+		<style>
+			:root {
+				--bg-color: #f5f7fe;
+				--light-blue: #5296cf;
+				--dark-primary: #33485d;
+				--bg-color: #f5f7fe;
+				--green: #28a745;
+				--teal: #20c997;
+			}
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+				background-color: #f5f7fe;
+			}
+			h2 {
+				text-align: center;
+			}
+			.phone-list {
+				list-style-type: none;
+				display: flex;
+				padding: 0;
+				gap: 10px;
+				flex-direction: column;
+			}
+			.phone-list li {
+				background: #ffffff;
+				padding: 10px;
+				margin: 0px;
+				border-radius: 10px;
+				font-size: 18px;
+			}
+			.label {
+				font-weight: bold;
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// document.querySelectorAll('.phone-list li').forEach(function (li) {
+				// 	let text = li.textContent.trim();
+				// 	let numberMatch = text.match(/\(?\+?\d[\d\s()-]+/g);
+				// 	if (numberMatch) {
+				// 		let originalNumber = numberMatch[0];
+				// 		li.innerHTML = `<span class="label">${text.replace(originalNumber, '').trim()} </span><a href="uh-app:navigate;messages;${originalNumber}">${originalNumber}</a>`;
+				// 	}
+				// });
+			});
+		</script>
 	</head>
-
 	<body>
-		
+		<h2>Phone Numbers List</h2>
+		<ul class="phone-list">
+			<li>Company Contact National: (571) 781-0479</li>
+			<li>Billing Q - Global Contact: 7881</li>
+			<li>(571) 685-8576</li>
+			<li>Personal Contact: (571) 685-8576</li>
+			<li>US International: +1 415-555-1234</li>
+			<li>US National: (415) 555-1234</li>
+			<li>Australian International: +61 2 9876 5432</li>
+			<li>US International: +1 212-555-7890</li>
+			<li>US National: 212-555-7890</li>
+			<li>Australian International: +61 3 8765 4321</li>
+			<li>US International: +1 646-987-6543</li>
+			<li>US National: 646-987-6543</li>
+		</ul>
 	</body>
 </html>
