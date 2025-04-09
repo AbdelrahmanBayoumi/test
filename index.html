@@ -232,7 +232,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    window.parent.postMessage({ type: 'iframeResize', height }, '*');
  }
 
- window.onload = sendIframeHeight;
+document.addEventListener("DOMContentLoaded", sendIframeHeight);
  window.onresize = sendIframeHeight;
 </script>				</div>
 				</div>
