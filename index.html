@@ -42,10 +42,14 @@
 			}
 		</style>
 		<script>
-			window.onload = function () {
-			  const height = document.body.scrollHeight;
-			  window.parent.postMessage({ type: 'iframeResize', height }, '*');
-			};
+		function sendIframeHeight() {
+			const height = document.body.scrollHeight;
+			window.parent.postMessage({ type: 'iframeResize', height }, '*');
+		}
+		
+		window.onload = sendIframeHeight;
+		window.onresize = sendIframeHeight;
+
 		</script>
 	</head>
 	<body>
