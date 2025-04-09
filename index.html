@@ -234,6 +234,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 document.addEventListener("DOMContentLoaded", sendIframeHeight);
  window.onresize = sendIframeHeight;
+window.onload = () => {
+  const intervalId = setInterval(() => {
+    const leadbooster = document.getElementById("LeadboosterContainer");
+    if (leadbooster) {
+      leadbooster.remove();
+      clearInterval(intervalId);
+      console.log("LeadboosterContainer removed and interval cleared");
+    }
+  }, 1500);
+};
 </script>				</div>
 				</div>
 				</div>
